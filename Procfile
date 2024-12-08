@@ -1,1 +1,1 @@
-web: gunicorn david_blog.wsgi
+web: gunicorn config.wsgi:application
