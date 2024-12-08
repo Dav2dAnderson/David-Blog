@@ -120,12 +120,13 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/5.1/howto/static-files/
 
-STATIC_URL = 'static/'
-STATIC_ROOT = os.path.join(BASE_DIR, 'static')
-STATICFILES_DIRS = [os.path.join(BASE_DIR, 'staticfiles')]
+STATIC_URL = '/static/'  # URL orqali statik fayllarga kirish
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')  # collectstatic buyrug'ini ishga tushirgandan keyin statik fayllar bu papkada bo'ladi
+STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]  # Boshqa statik fayllar joylashgan papka (agar mavjud bo'lsa)
 
-MEDIA_URL = 'media/'
-MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+MEDIA_URL = '/media/'  # Media fayllarga URL orqali kirish
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')  # Media fayllar shu papkada saqlanadi
+
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field
