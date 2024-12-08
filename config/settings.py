@@ -27,7 +27,6 @@ SECRET_KEY = 'django-insecure-+m&)opqb!nuum16186i1u-f(1qsl#+qu+oi&h$&_g2w!8#qsk@
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-<<<<<<< HEAD
 ALLOWED_HOSTS = ['david-blog-gngi.onrender.com', '127.0.0.1', 'localhost']
 
 
@@ -48,9 +47,6 @@ LOGGING = {
         },
     },
 }
-=======
-ALLOWED_HOSTS = ['david-blog-94gf.onrender.com', '127.0.0.1', 'localhost']
->>>>>>> ba7292f011de47b46d700d9a03c9a4682ae96e4a
 
 
 
@@ -143,13 +139,12 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/5.1/howto/static-files/
 
-STATIC_URL = '/static/'  # URL orqali statik fayllarga kirish
-STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')  # collectstatic buyrug'ini ishga tushirgandan keyin statik fayllar bu papkada bo'ladi
-STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]  # Boshqa statik fayllar joylashgan papka (agar mavjud bo'lsa)
+STATIC_URL = 'static/'
+STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+STATICFILES_DIRS = [os.path.join(BASE_DIR, 'staticfiles')]
 
-MEDIA_URL = '/media/'  # Media fayllarga URL orqali kirish
-MEDIA_ROOT = os.path.join(BASE_DIR, 'media')  # Media fayllar shu papkada saqlanadi
-
+MEDIA_URL = 'media/'
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field
