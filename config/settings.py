@@ -30,6 +30,25 @@ DEBUG = False
 ALLOWED_HOSTS = ['david-blog-gngi.onrender.com', '127.0.0.1', 'localhost']
 
 
+LOGGING = {
+    'version': 1,
+    'disable_existing_loggers': False,
+    'handlers': {
+        'console': {
+            'level': 'DEBUG',
+            'class': 'logging.StreamHandler',
+        },
+    },
+    'loggers': {
+        'django': {
+            'handlers': ['console'],
+            'level': 'DEBUG',
+            'propagate': True,
+        },
+    },
+}
+
+
 
 # Application definition
 
